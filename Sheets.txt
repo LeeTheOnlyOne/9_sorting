@@ -1,0 +1,17 @@
+﻿Dictionary<string, int> pair = new Dictionary<string, int>();
+
+            pair["Denis"] = 16;
+            pair["Gogo"] = 90;
+            Console.WriteLine(pair["Denis"]);
+            
+            pair["Denis"] = 50;
+            foreach (var item in pair)
+            {
+                Console.WriteLine($"{item.Key} --> {item.Value}");
+            }
+            Console.WriteLine(new string('*',10));
+            pair.Remove("Denis");
+            foreach (var item in pair)
+            {
+                Console.WriteLine($"{item.Key} --> {item.Value}");
+            }
